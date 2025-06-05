@@ -88,8 +88,8 @@ const startRace = () => {
 
       if (currentPos < targetPos) {
         const distFactor = baseDistance / program.value[currentRound.value - 1].distance
-        const baseSpeed = Math.random() * 10
-        const bonus = horse.condition * 0.05
+        const baseSpeed = Math.random() * 15
+        const bonus = horse.condition * 0.03
         const speed = (baseSpeed + bonus) * distFactor
 
         newPositions[horse.id] = currentPos + speed
